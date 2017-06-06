@@ -10,12 +10,26 @@
 
     <android.support.v7.widget.RecyclerView
         android:id='@+id/recyclerView'
-        android:layout_width="378dp"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
         android:background="@android:color/holo_blue_light"
         android:backgroundTint="?android:attr/colorPressedHighlight"
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="8dp" />
+
+    <TextView
+        android:id="@+id/acerca"
+        android:layout_width="match_parent"
+        android:layout_height="299dp"
+        android:layout_x="-1dp"
+        android:layout_y="437dp"
+        android:background="@android:color/holo_red_light"
+        android:clickable="true"
+        android:onClick="acerca"
+        android:text="Acerca de"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
 
 </AbsoluteLayout>

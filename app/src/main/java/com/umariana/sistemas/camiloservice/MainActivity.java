@@ -69,20 +69,6 @@ public class MainActivity extends AppCompatActivity {
         aptoParaCargar = true;
         obtenerListaPresidentes();
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.opciones, menu);
-        return true;
-    }
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id==R.id.uno) {
-            Intent i = new Intent(this, MainDos.class );
-            startActivity(i);
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     private void obtenerListaPresidentes() {
 
@@ -108,6 +94,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public  void acerca(View view)
+    {
+        Intent i = new Intent(this, acerca.class );
+        startActivity(i);
     }
 
 
